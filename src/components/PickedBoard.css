@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+.choices {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    text-align: center;
+}
+
+.choices-circle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 300px;
+    width: 290px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border-radius: 50%;
+    border: 20px solid #DB2E4D;
+}
+
+.message {
+    margin-top: 200px;
+
+    animation: center;
+    animation-duration: 2s;
+}
+
+@keyframes center {
+    0% {
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+ 
+}
+
+.game-message {
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+button {
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    height: 48px;
+    width: 220px;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.my-choice {
+    transform: translateX(-50%);
+    animation: left;
+    animation-duration: 4s;
+}
+
+.computer-choice {
+    transform: translateX(50%);
+    animation: right;
+    animation-duration: 4s;
+}
+
+.choices-circle.Paper {
+    border: 45px solid #4664F4;
+}
+
+.choices-circle.Scissors {
+    border: 45px solid #EB9F0E;
+}
+
+.choices-circle.Rock {
+    border: 45px solid #DB2E4D;
+}
+
+.choices-circle .icon {
+    height: 110px;
+    width: 110px;
+}
+
+.WON {
+    transition: 1s;
+    box-shadow: 0 0 0 80px hsl(0, 0%, 30%, 30%), 0 0 0 160px hsl(0, 0%, 30%, 20%), 0 0 0 240px hsl(0, 0%, 30%, 10%);
+}

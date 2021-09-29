@@ -1,0 +1,63 @@
+.Board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 254;
+    width: 284;
+    margin-top: 50px;
+}
+
+
+.paper-circle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -180px;
+    top: -100px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border-radius: 50%;
+    border: 40px solid #4664F4;
+   
+}
+
+.icon {
+    align-self: center;
+    height: 74px;
+    width: 74px;
+}
+
+.scissor-circle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: -180px;
+    top: -100px;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border-radius: 50%;
+    border: 40px solid #EB9F0E;
+}
+
+.rock-circle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -200px;
+    transform: translate(-50%);
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border-radius: 50%;
+    border: 40px solid #DB2E4D;
+    
+}
+
+.rock-circle:hover,.paper-circle:hover,.scissor-circle:hover{
+    box-shadow:0 0 0 30px hsl(0, 0%, 30%, 30%);
+}
+
